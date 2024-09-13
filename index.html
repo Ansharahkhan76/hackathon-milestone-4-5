@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder</h1>
+
+    <!-- Persnol information -->
+
+    <form id="resume-form">
+        <fieldset>
+            <legend>Persnol Information</legend>
+
+            <label for="username">Username : </label>
+                <input type="text" id="username" placeholder="Enter your User name" required>
+
+            <label for="name">Name : </label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email : </label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+
+            <label for="phone">Phone : </label>
+                <input type="tel" id="phone" placeholder="Enter your Phone number" required>
+        </fieldset>
+
+        <!-- Education -->
+
+        <fieldset>
+
+            <legend>Education</legend>
+
+            <label for="education">Education : </label>
+
+            <textarea required id="education" placeholder="Enter your educcation" rows="3"></textarea>  
+
+        </fieldset>
+
+        <!-- Experience -->
+
+        <fieldset>
+            
+            <legend>Experience</legend>
+
+            <label for="experience">Experience : </label>
+
+            <textarea required id="experience" placeholder="Enter your work experience" rows="3"></textarea>  
+
+        </fieldset>
+
+        <!-- Skills -->
+
+        <fieldset>
+            
+            <legend>Skills</legend>
+
+            <label for="skills">Skills : </label>
+
+            <textarea required id="skills" placeholder="Enter your Skills" rows="3"></textarea>  
+
+        </fieldset>
+
+                <button type="submit">Generate Resume</button>
+
+    </form>
+
+    <!--Let's Display the Resume -->
+<br><br>
+<div id="resume-display" contenteditable="true"></div>
+<h2 style="text-align: center;">Editable Link</h2>
+
+
+<!-- Editable resume -->
+
+<br>
+<div id="shareable-link-container" style="display: none;">
+    
+</div>
+<div>
+<p class="abcd"> → Here is your Link to View and Edit your resume <br>From 'Ansharah Khan' <br> Enjoy! ☻ </p>
+<a href="#" id="shareale-link" target="_blank"></a>
+</div>
+<br>
+<button id="download-pdf"><b>Download as PDF</b></button>
+
+<!-- Script link file -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
